@@ -73,7 +73,19 @@ body.dark-theme{
 
 
 /*========== Generate PDF button ==========*/
+.generate-pdf {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 2.2rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 
+.generate-pdf:hover {
+  color: var(--title-color);
+}
 
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
 
@@ -490,6 +502,10 @@ img{
 
   .resume__left, .resume__right {
     padding: 0 1.5rem;
+  }
+
+  .generate-pdf{
+    display: inline-block;
   }
 
   .section-title, .profile__description {
