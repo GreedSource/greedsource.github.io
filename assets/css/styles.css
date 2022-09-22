@@ -172,6 +172,7 @@ body.scale-cv {
 .scale-cv .education__data,
 .scale-cv .experience__data .skills__data {
   gap: 0.25rem;
+  text-align: justify;
 }
 
 .scale-cv .skills__name {
