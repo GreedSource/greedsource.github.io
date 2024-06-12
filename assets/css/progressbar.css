@@ -8,10 +8,10 @@
   margin: 0.25rem 0;
 }
 
-.pb-border:hover {
+/* .pb-border:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
-}
+} */
 
 .pb-background {
   color: #fff !important;
