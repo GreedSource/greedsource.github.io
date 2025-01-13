@@ -163,7 +163,7 @@ body.scale-cv {
 }
 
 .scale-cv .page-break {
-  padding-top: 7rem
+  padding-top: 1.5rem
 }
 
 .scale-cv .education__line,
@@ -510,21 +510,30 @@ img {
 }
 
 /*========== SKILLS AND LANGUAGES ==========*/
-.skills__content,
+
 .languages__content {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
+.skills__content,
 .languages__content {
   gap: 0;
+}
+
+.skills__data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
 }
 
 .skills__name,
 .languages__name {
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-1);
+  /* margin-bottom: var(--mb-1); */
 }
 
 .skills__name {
@@ -534,6 +543,11 @@ img {
 .skills__name:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
+}
+
+.skills__data:hover > :not(:hover){
+  filter: blur(5px);
+  opacity: 0.5;
 }
 
 .skills__circle,
