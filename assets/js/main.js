@@ -111,7 +111,7 @@ const resumeButton = document.getElementById('resume-button');
 // Html2pdf options
 const opt = {
   margin: 0,
-  filename: 'JoelGarcia__CV.pdf',
+  filename: 'cv-joel-garcia.pdf',
   image: { type: 'jpeg', quality: 0.98 },
   html2canvas: { scale: 4, scrollY: 0 },
   jsPDF: { format: 'a4', orientation: 'portrait' },
