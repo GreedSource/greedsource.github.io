@@ -89,7 +89,7 @@
                 <h1 class="home__title">JOEL <b>GARCIA</b></h1>
                 <h3 class="home__profession">Ingeniero de software · Líder técnico</h3>
                 <!-- Button to generate and download the pdf. Available for desktop. -->
-                <div>
+                <div class="home__actions">
                   <button
                     type="button"
                     class="home__button-movil"
@@ -97,7 +97,12 @@
                   >
                     Imprimir / guardar PDF
                   </button>
+                  <button type="button" class="share-button" id="share-button">
+                    <i class="bx bx-share-alt" aria-hidden="true"></i>
+                    Compartir
+                  </button>
                 </div>
+                <span class="share-status" id="share-status" role="status" aria-live="polite"></span>
               </div>
               <div class="home__address bd-grid">
                 <span class="home__information">

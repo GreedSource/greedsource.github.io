@@ -136,3 +136,42 @@ resumeButton.addEventListener('click', () => {
   // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
   setTimeout(removeScale, 5000);
 });
+
+/*==================== SHARE PORTFOLIO ====================*/
+const shareButton = document.getElementById('share-button');
+const shareStatus = document.getElementById('share-status');
+
+async function copyPortfolioLink() {
+  const pageUrl = window.location.href;
+
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(pageUrl);
+    return 'Enlace copiado al portapapeles.';
+  }
+
+  window.prompt('Copia este enlace para compartirlo:', pageUrl);
+  return 'Puedes copiar el enlace para compartirlo.';
+}
+
+shareButton.addEventListener('click', async () => {
+  const shareData = {
+    title: document.title,
+    text: 'Conoce mi perfil profesional y experiencia.',
+    url: window.location.href,
+  };
+
+  if (navigator.share) {
+    try {
+      await navigator.share(shareData);
+      return;
+    } catch (error) {
+      if (error.name === 'AbortError') return;
+    }
+  }
+
+  try {
+    shareStatus.textContent = await copyPortfolioLink();
+  } catch (error) {
+    shareStatus.textContent = 'No se pudo copiar el enlace.';
+  }
+});
