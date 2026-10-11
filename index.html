@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="description" content="CV y portafolio de Joel García, ingeniero en Tecnologías de la Información y líder técnico especializado en desarrollo de software." />
 
     <!--========== BOX ICONS ==========-->
     <link
@@ -14,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/progressbar.css" />
 
-    <title>Resume cv</title>
+    <title>Joel García | Ingeniero de software</title>
   </head>
   <body>
     <!--========== HEADER ==========-->
@@ -85,15 +87,16 @@
                   class="home__img"
                 />
                 <h1 class="home__title">JOEL <b>GARCIA</b></h1>
-                <h3 class="home__profession">Ingeniero en TI</h3>
+                <h3 class="home__profession">Ingeniero de software · Líder técnico</h3>
                 <!-- Button to generate and download the pdf. Available for desktop. -->
                 <div>
-                  <a
-                    download
-                    href="assets/pdf/cv-joel-garcia.pdf"
+                  <button
+                    type="button"
                     class="home__button-movil"
-                    >Descargar</a
+                    onclick="window.print()"
                   >
+                    Imprimir / guardar PDF
+                  </button>
                 </div>
               </div>
               <div class="home__address bd-grid">
@@ -214,10 +217,12 @@
               <h2 class="section-title">Perfil</h2>
 
               <p class="profile__description">
-                Egresado en Ingeniería en Tecnologías de la Información,
-                enfocado al desarrollo de software, con conocimiento en
-                multiples lenguajes de programación, no experto, pero capaz de
-                adaptarme a diversas circunstancias y tecnologías.
+                Ingeniero en Tecnologías de la Información con experiencia en
+                desarrollo backend y full stack. Actualmente lidero equipos y
+                decisiones técnicas, construyo servicios con Node.js, TypeScript
+                y Python, e integro soluciones serverless en AWS. Me enfoco en
+                entregar software mantenible, resolver problemas de producción
+                y colaborar de forma cercana con el equipo.
               </p>
             </section>
 
